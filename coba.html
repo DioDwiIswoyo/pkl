@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            line-height: 1.5;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1170px;
+            margin: auto;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .footer {
+            padding: 70px 0;
+            color: #ffffff;
+            background-image: url(gambar/footer.png);
+            text-rendering: optimizeLegibility; /* Teks tidak akan blur */
+        }
+
+        .footer-col {
+            width: 25%;
+            padding: 0 15px;
+        }
+
+        .footer-col h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 35px;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px;
+        }
+
+        .footer-col p {
+            font-size: 16px;
+            text-transform: capitalize;
+            font-weight: 300;
+            display: block;
+            color: #ffffff;
+            transition: all 0.3s ease;
+            text-rendering: optimizeLegibility; /* Teks tidak akan blur */
+        }
+
+        .footer-col p:hover {
+            color: #ffffff;
+            padding-left: 8px;
+        }
+
+        .footer-col .social-links a {
+            display: inline-block;
+            height: 40px;
+            width: 40px;
+            background-color: rgba(255, 255, 255, 0.2);
+            margin: 0 10px 10px 0;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            color: #ffffff;
+            transition: all 0.5s ease;
+        }
+
+        .footer-col .social-links a:hover {
+            color: #24262b;
+            background-color: #ffffff;
+        }
+
+        .copyright {
+            background-color: black;
+            color: white;
+            text-rendering: optimizeLegibility; /* Teks tidak akan blur */
+        }
+
+        /* Responsive */
+        @media (max-width: 767px) {
+            .footer-col {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media (max-width: 574px) {
+            .footer-col {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col" style="width: 40%">
+                    <h4>ALAMAT DAN KONTAK</h4>
+                    <p>Hubungi kami melalui:</p>
+                    <p>
+                        <i class="fas fa-home"></i> JI. Basuki Rahmat No.15, Pocanan, Kota, Kota Kediri, East Java
+                        64129
+                    </p>
+                    <p>
+                        <i class="fas fa-phone"></i> (0354) 682955
+                    </p>
+                </div>
+                <div class="footer-col" style="width: 30%">
+                    <h4>MEDIA SOSIAL</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col" style="width: 30%">
+                    <h4>Statistik Web</h4>
+                    <p>Jumlah Data:</p>
+                    <p>Hari ini: 300</p>
+                    <p>Kemarin: 1800</p>
+                    <p>Bulan ini: 15000</p>
+                    <p>Tahun ini: 75000</p>
+                    <p>Total: 92100</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright col-12 text-center">
+        <p> Dinas Komunikasi dan Informatika Kota Kediri | &copy; copyright 2024</p>
+    </div>
+    <!--akhir footer-->
+</body>
+</html>
